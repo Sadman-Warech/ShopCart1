@@ -34,7 +34,7 @@ public class RegistrationTest extends Base {
 		regPage.monthDropdown().sendKeys("May");
 		regPage.dayDropdown().sendKeys("28");
 		regPage.yearDropdown().sendKeys("1995");
-		regPage.email().sendKeys("ridom7588@gmail.com");
+		regPage.email().sendKeys("ridom5808@gmail.com");
 		regPage.companyName().sendKeys("Tech Hepta");
 		regPage.newsLetter().click();
 		regPage.password().sendKeys("12345678Ss");

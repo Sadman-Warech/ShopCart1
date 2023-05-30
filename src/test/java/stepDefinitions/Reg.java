@@ -21,6 +21,7 @@ public class Reg extends Base {
 	@Given("^User go to the NopCommerce Home page$")
 	public void user_go_to_the_nopcommerce_home_page() throws IOException {
 
+		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
 
 	}
