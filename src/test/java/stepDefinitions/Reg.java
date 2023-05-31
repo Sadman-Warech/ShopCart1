@@ -61,7 +61,7 @@ public class Reg extends Base {
 	@And("^User set (.+) as email$")
 	public void user_set_as_email(String dynamicemail) {
 
-		regPage.email().sendKeys("ridom577@gmail.com");
+		regPage.email().sendKeys("ridom889@gmail.com");
 
 	}
 

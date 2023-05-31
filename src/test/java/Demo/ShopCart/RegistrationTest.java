@@ -18,6 +18,7 @@ public class RegistrationTest extends Base {
 
 	WebDriver driver;
 	ExtentReports extentreport;
+	RegPage regPage;
 
 	@Test
 	public void reg() throws IOException {
@@ -26,7 +27,7 @@ public class RegistrationTest extends Base {
 		eTest.info("Chrome Browser launched");
 		eTest.info("nopCommerce got lauched");
 
-		RegPage regPage = new RegPage(driver);
+		regPage = new RegPage(driver);
 		regPage.registrationLink().click();
 		regPage.gender().click();
 		regPage.firstName().sendKeys("Sadman");
@@ -34,7 +35,7 @@ public class RegistrationTest extends Base {
 		regPage.monthDropdown().sendKeys("May");
 		regPage.dayDropdown().sendKeys("28");
 		regPage.yearDropdown().sendKeys("1995");
-		regPage.email().sendKeys("ridom5808@gmail.com");
+		regPage.email().sendKeys("irdom9980@yahoo.com");
 		regPage.companyName().sendKeys("Tech Hepta");
 		regPage.newsLetter().click();
 		regPage.password().sendKeys("12345678Ss");
@@ -46,6 +47,7 @@ public class RegistrationTest extends Base {
 
 	@BeforeMethod
 	public void configuration() throws IOException {
+
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
 

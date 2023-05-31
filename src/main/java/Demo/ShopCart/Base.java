@@ -13,11 +13,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
+
 	WebDriver driver;
 	public Properties prop;
 
+	// user define method
 	public WebDriver initializeDriver() throws IOException {
 
+		// creating objects for the properties
 		prop = new Properties();
 
 		String propPath = System.getProperty("user.dir") + "\\src\\main\\java\\Demo\\ShopCart\\data.properties";
